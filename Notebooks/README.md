@@ -1,8 +1,8 @@
-# Analysis Notebooks
+## Analysis Notebooks
 
 This folder contains the end-to-end analytical workflow for the IT HelpDesk dataset. The process is divided into three distinct phases to ensure modularity, reproducibility, and clean code standards.
 
-# Analytical Workflow
+## Analytical Workflow
 
 1. Data Preparation (data_prep.ipynb)
 The Foundation: This notebook focuses on transforming messy, raw IT logs into a high-quality dataset.
@@ -14,6 +14,7 @@ The Foundation: This notebook focuses on transforming messy, raw IT logs into a 
  - Type Conversion: Standardized date-time objects for Created Time and Resolved Time to enable time-series calculations.
 
  - Output: Generates the cleaned foundation used by all subsequent notebooks.
+   
 
 2. Statistical Profiling (data_summary_distributions.ipynb)
 The "What": An exploration of individual variables and their behavior.
@@ -23,6 +24,7 @@ The "What": An exploration of individual variables and their behavior.
  - Agent Performance: Initial look at ticket distribution across the IT staff.
 
  - Outlier Detection: Identifying anomalies in ticket IDs and service durations.
+   
 
 3. Patterns & Relationships (patterns_relationships.ipynb)
 The "Why": Advanced analysis focusing on correlations and time-based trends.
@@ -33,7 +35,7 @@ The "Why": Advanced analysis focusing on correlations and time-based trends.
 
  - Visualization: High-impact Seaborn and Matplotlib charts for business reporting.
 
-# Environment Setup
+## Environment Setup
 To run these notebooks, ensure you have the following Python libraries installed:
 
 pip install pandas numpy matplotlib seaborn
