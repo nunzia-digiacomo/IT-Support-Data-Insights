@@ -1,7 +1,8 @@
 ![Project Header](./images/monthly_ticket_trend.png)
 
-# 🛠️ IT HelpDesk Performance Analysis & Optimization
-## 📌 Project Overview This project provides an end-to-end Exploratory Data Analysis (EDA) of a high-volume IT HelpDesk ecosystem. By analyzing 9,357 unique support requests, I identified critical operational bottlenecks, ticket distribution patterns, and software reliability trends.
+## 🛠️ IT HelpDesk Performance Analysis & Optimization
+
+ 📌 Project Overview This project provides an end-to-end Exploratory Data Analysis (EDA) of a high-volume IT HelpDesk ecosystem. By analyzing 9,357 unique support requests, I identified critical operational bottlenecks, ticket distribution patterns, and software reliability trends.
 
 The goal of this analysis is to transform raw support logs into actionable business intelligence to improve Service Level Agreements (SLAs) and optimize resource allocation.
 
