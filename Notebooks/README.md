@@ -1,41 +1,89 @@
-## Analysis Notebooks
+# Analytical Workflow Overview
+# 1️⃣ Data Preparation — Building a Reliable Foundation
 
-This folder contains the end-to-end analytical workflow for the IT HelpDesk dataset. The process is divided into three distinct phases to ensure modularity, reproducibility, and clean code standards.
+## Notebook: 1_data_prep.ipynb
 
-## Analytical Workflow
+This notebook focuses on transforming raw, unstructured IT HelpDesk logs into a clean and analysis-ready dataset.
 
-1. Data Preparation (data_prep.ipynb)
-The Foundation: This notebook focuses on transforming messy, raw IT logs into a high-quality dataset.
+Key steps include:
 
- - Data Auditing: Initial scan of 9,357 records to identify structural inconsistencies.
+Data Auditing: Initial review of 9,357 records to identify structural inconsistencies, missing values, and data quality issues.
 
- - Cleaning & Imputation: Handled missing values in critical fields such as Item and Resolution to ensure statistical validity.
+Cleaning & Imputation: Handling missing or incomplete values in critical fields (e.g. Item, Resolution) to ensure statistical reliability.
 
- - Type Conversion: Standardized date-time objects for Created Time and Resolved Time to enable time-series calculations.
+Type Conversion: Standardizing datetime fields (Created Time, Resolved Time) to enable accurate time-series and SLA analysis.
 
- - Output: Generates the cleaned foundation used by all subsequent notebooks.
-   
+Validation Checks: Ensuring consistency across categorical fields and timestamps.
 
-2. Statistical Profiling (data_summary_distributions.ipynb)
-The "What": An exploration of individual variables and their behavior.
+Output:
+A cleaned and standardized dataset that serves as the single source of truth for all downstream analysis.
 
- - Distribution Analysis: Examining the frequency of ticket categories (e.g., Software vs. Hardware).
+Why this matters:
+High-quality data is essential for reliable insights. This step ensures that trends, patterns, and SLA metrics are based on consistent and trustworthy information.
 
- - Agent Performance: Initial look at ticket distribution across the IT staff.
+# 2️⃣ Statistical Profiling — Understanding the Data
 
- - Outlier Detection: Identifying anomalies in ticket IDs and service durations.
-   
+## Notebook: 2_data_summary_distributions.ipynb
 
-3. Patterns & Relationships (patterns_relationships.ipynb)
-The "Why": Advanced analysis focusing on correlations and time-based trends.
+This notebook explores individual variables to understand their distributions, central tendencies, and potential anomalies.
 
- - Time-Series Analysis: Resampling data to identify monthly and weekly volume peaks.
+Key analyses include:
 
- - Categorical Correlations: Mapping the relationship between specific technical categories and SLA "Overdue Status."
+Descriptive Statistics: Summary metrics for ticket volume, resolution times, and categorical variables.
 
- - Visualization: High-impact Seaborn and Matplotlib charts for business reporting.
+Distribution Analysis: Frequency analysis of ticket types (e.g. Software vs. Hardware) and subcategories.
 
-## Environment Setup
-To run these notebooks, ensure you have the following Python libraries installed:
+Workload Distribution: Examination of how tickets are allocated across IT agents.
+
+Outlier Detection: Identification of anomalies in ticket IDs, service durations, and resolution times.
+
+Output:
+A clear statistical understanding of ticket behavior, common issue types, and workload patterns.
+
+Why this matters:
+This step highlights dominant drivers of IT demand and helps identify areas where efficiency improvements or automation may have the greatest impact.
+
+# 3️⃣ Patterns & Relationships — Explaining the “Why”
+
+## Notebook: 3_patterns_relationships.ipynb
+
+This notebook focuses on uncovering relationships, trends, and risk factors that influence IT service performance.
+
+Key analyses include:
+
+Time-Series Analysis: Resampling ticket data to identify monthly and weekly demand patterns.
+
+SLA Risk Analysis: Examining which ticket categories are most likely to become overdue.
+
+Categorical Relationships: Exploring correlations between issue types, locations, and SLA outcomes.
+
+Visualization: High-impact Matplotlib and Seaborn charts designed for stakeholder communication.
+
+Output:
+Actionable insights linking ticket characteristics to operational risks and performance gaps.
+
+Why this matters:
+Understanding why certain tickets breach SLAs or spike during specific periods enables proactive staffing, prioritization, and process improvements.
+
+# Environment Setup
+
+To run the notebooks locally, ensure the following Python libraries are installed:
 
 pip install pandas numpy matplotlib seaborn
+
+
+All notebooks were developed and executed using Jupyter Notebook.
+
+# Skills Demonstrated
+
+Data cleaning and validation
+
+Exploratory Data Analysis (EDA)
+
+Descriptive statistics
+
+Time-series analysis
+
+Data visualization for business insight
+
+Translating technical findings into operational recommendations
