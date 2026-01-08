@@ -1,15 +1,15 @@
 ![Project Header](./images/monthly_ticket_trend.png)
 
-# 🛠️ IT HelpDesk Performance Analysis & Optimization
+# IT HelpDesk Performance Analysis & Optimization
 
-# 📌 Project Overview
+# Project Overview
 
 This project presents an end-to-end Exploratory Data Analysis (EDA) of a real-world IT HelpDesk ticket system.
 Using 9,357 support requests, the analysis identifies operational bottlenecks, demand patterns, and SLA risk factors to support data-driven decision-making in IT operations.
 
 The objective is to transform raw support logs into actionable business insights that can improve service efficiency, staffing allocation, and SLA compliance.
 
-# 📊 Dataset
+# Dataset
 
 The dataset consists of high-volume IT HelpDesk logs containing 32 attributes, including:
 
@@ -25,8 +25,8 @@ SLA and overdue indicators
 
 The raw data and data dictionary are available in the Data/ directory.
 
-# 📂 Repository Structure
-
+# Repository Structure
+```
 Data/
 │── Raw IT HelpDesk data
 │── Data dictionary
@@ -35,8 +35,8 @@ notebooks/
 │── 1_data_prep.ipynb
 │── 2_data_summary_distributions.ipynb
 │── 3_patterns_relationships.ipynb
-
-# 🔍 Analytical Workflow
+```
+# Analytical Workflow
 
 1. Data Preparation (1_data_prep.ipynb)
 
@@ -66,15 +66,15 @@ Analysis of ticket categories most likely to breach SLAs
 
 Visual insights for stakeholder communication
 
-# 📈 Key Insights
+# Key Insights
 
-Peak Demand Windows: Ticket volume spikes during specific time periods, indicating the need for adjusted staffing levels.
+- Peak Demand Windows: Ticket volume spikes during specific time periods, indicating the need for adjusted staffing levels.
 
-Primary Bottlenecks: Software-related issues account for the largest share of requests.
+- Primary Bottlenecks: Software-related issues account for the largest share of requests.
 
-Efficiency Gaps: Certain site locations experience a higher concentration of overdue tickets, suggesting localized process or capacity challenges.
+- Efficiency Gaps: Certain site locations experience a higher concentration of overdue tickets, suggesting localized process or capacity challenges.
 
-# 💡 Business Recommendations
+# Business Recommendations
 
 Proactive Training: Develop self-service documentation for common software issues to reduce incoming ticket volume.
 
@@ -82,7 +82,7 @@ Resource Allocation: Rebalance IT staff coverage during identified peak periods.
 
 SLA Monitoring: Implement automated alerts for ticket categories with higher overdue risk.
 
-# 🛠️ Tech Stack
+# Tech Stack
 
 Language: Python
 
@@ -90,7 +90,7 @@ Libraries: Pandas, NumPy, Matplotlib, Seaborn
 
 Tools: Jupyter Notebook, GitHub
 
-# 🎯 Skills Demonstrated
+# Skills Demonstrated
 
 Data cleaning and wrangling
 
