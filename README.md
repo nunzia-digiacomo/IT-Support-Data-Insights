@@ -1,5 +1,3 @@
-![Project Header](./images/monthly_ticket_trend.png)
-
 # IT HelpDesk Performance Analysis & Optimization
 
 # Project Overview
